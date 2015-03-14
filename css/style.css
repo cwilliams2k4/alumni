@@ -1,0 +1,347 @@
+/*!
+ * Project Name: Blank Template
+ * Client: Your Client
+ * Author: Your Name
+ * GA FEWD10, Washington, D.C.
+ */
+
+
+/*******************************************
+ * SETUP
+ *******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+/*******************************************
+ * BASE STYLES
+ *******************************************/
+
+body {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/*******************************************
+ * FONTS
+ *******************************************/
+
+ .serif {
+    font-family: "Merriweather", serif;
+ }
+
+ .sans {
+    font-family: "Source Sans Pro", sans-serif;
+ }
+
+ .sans-heading {
+    font-family: "Oswald", sans-serif;
+ }
+
+/*******************************************
+ * LAYOUT
+ *******************************************/
+
+/* Center the container */
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.maroon {
+    background-color: #990033;
+    padding: 5px;
+    border-bottom: 5px solid #FFB310;
+    color: #FFF;
+}
+
+.black {
+    background-color: #000;
+    padding: 5px;
+    border-bottom: 5px solid #FFB310;
+    color: #FFF;
+}
+
+.gray {
+    background-color: #C6C6C6;
+    padding: 5px;
+    border-bottom: 5px solid #FFB310;
+}
+
+.gray h1 {
+    color: #990033;
+    /*font-style: italic;*/
+    font-size: 2em;
+    text-align: center;
+    font-family: "Roboto";
+}
+.gray h2 {
+    font-family: "Roboto";
+    color: #990033;
+    text-align: left
+}
+
+h1 {
+    color: #FFB310;
+    /*font-style: italic;*/
+    font-size: 2em;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+h2, h3 {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.copy img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gray a {
+    text-decoration: none;
+    color: #990033;
+}
+.maroon a, .maroon h2, .black h2 {
+    text-decoration: none;
+    color: #FFB310;
+}
+.black a {
+    text-decoration: none;
+    color: #FFB310;
+}
+
+.gray h1 a {
+    color: #000
+}
+
+section p {
+    margin: 0 0 4px;
+    line-height: 1.5;
+}
+
+.logoshirts {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45vh;
+    border: 1px solid #FFB310
+}
+
+#shirts{
+    text-align:center;
+}
+
+
+@media all and (min-width: 900px) {
+    .copy {
+        padding: 0 35%;
+    }
+    .twitter {
+        padding: 0 35%;
+    }
+}
+
+@media all and (min-width: 800px) {
+   .top {
+        padding: 70px 0px 0px 0px;
+        
+    }
+/*    .m-header__logo {
+        content:url(../img/smaller_capital.png);
+    }*/ 
+}
+
+@media all and (min-width: 500px) {
+    .copy {
+    padding-left: 20%;
+    padding-right: 20%;
+    min-width: 250px
+ }
+   .twitter {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: auto
+ }
+}
+
+.m-header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1001;
+    width:100%;
+    padding:10px 0 5px;
+    background-color:#FFF;
+    border-bottom:4px solid #FFB310;
+}
+
+
+.m-header a {
+    color: #FFB310;
+    text-decoration: none;
+    font: Arial;
+}
+
+.m-footer{
+    background-color:#FFB310;
+    color:#000;
+    padding:20px 0;
+    text-align:center;
+    font:400 14px/1.24 "Roboto";
+}
+
+.m-footer a{
+    color: #990033;
+    text-decoration: none;
+}
+
+@media all and (max-width:800px){
+    .m-header{position:static}
+}
+
+.m-header__logo{
+    display:inline-block;
+    margin:4px 5% 0;
+    max-width:203px;
+    width:100%;
+    overflow:hidden
+}
+
+.m-header__logo img{
+    width:100%
+}
+
+@media all and (max-width:800px){
+    .m-header__logo{
+        display:block;
+        margin:0 auto;
+        content:url(../img/national_capital.png);
+    }
+}
+
+.m-header nav{
+    position:absolute;
+    text-align:center;
+    top:5px;
+    right:25px
+}
+
+@media all and (max-width:800px){
+    .m-header nav{
+        position:relative;
+        top:auto;
+        right:auto
+    }
+}
+
+.m-header nav ul{
+    margin:0;
+    padding:0
+    }
+
+.m-header nav li{
+    display:inline-block;
+    margin-right:10px;
+    padding-top:15px
+}
+
+.m-header nav li:last-child{
+    margin:0
+}
+
+@media all and (max-width:800px){
+    .m-header nav li{
+        padding-top:5px
+    }
+    #first {
+        display: none
+    }
+    .m-header__logo {
+
+    }
+}
+
+.m-header nav li a{
+    font:300 15px/1.24 "Roboto",Helvetica;
+    color:#990033;
+    font-weight: bold;
+}
+
+div header {
+    display: block
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    padding-left: 20px;
+    padding-right: 20px;
+
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.twitter_timeline {
+    margin: auto;
+    width: 100%;
+}
+
+
+
+
+/*******************************************
+ * ADDITIONAL STYLES
+ *******************************************/
+
+@media all and (max-width: 1500px) {
+
+ /* Mobile Styles */
+    body {
+        width: 100%;
+        max-width: 1500px;
+    }
+
+    .m-header {
+        width: 100%
+    }
+}
+}
