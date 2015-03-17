@@ -127,6 +127,9 @@ h2, h3 {
     margin-left: auto;
     margin-right: auto;
 }
+.copy li {
+    list-style: none;
+}
 
 .gray a {
     text-decoration: none;
@@ -182,7 +185,7 @@ section p {
     }*/ 
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 800px) {
     .copy {
     padding-left: 20%;
     padding-right: 20%;
@@ -194,6 +197,8 @@ section p {
     margin: auto
  }
 }
+
+
 
 .m-header{
     position: fixed;
@@ -352,6 +357,29 @@ div header {
   font-weight: bold;*/
 /*  font-size: 1em;
   text-align: center;*/
+}
+
+@media screen and (max-width: 930px) {
+    .flex-item {
+        width: 100%;
+        height: 140px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+@media screen and (max-width: 520px) {
+    .flex-item {
+        width: 100%;
+        height: 180px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+/*    .copy {
+        padding-left: 5%;
+        padding-right: 5%;
+    }*/
+
 }
 
 
